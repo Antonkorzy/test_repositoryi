@@ -9,6 +9,10 @@ body {
 	padding: 36px;
 }
 
+.cats-dogs{
+	display:flex;
+	flex-direction:row;
+}
 ul {
 	line-height: 4;
 }

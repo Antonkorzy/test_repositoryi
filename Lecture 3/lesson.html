@@ -12,7 +12,7 @@
       <div class="display-flex">Меня нужно сделать display: flex</div>
       <style>
         .display-flex {
-
+			display:flex;
         }
       </style>
     </section>
@@ -26,7 +26,8 @@
       </div>
       <style>
         .flex-direction-left {
-
+			display: flex;
+			flex-direction: row;
         }
       </style>
     </section>
@@ -39,7 +40,7 @@
       </div>
       <style>
         .flex-direction-right {
-
+			flex-direction: row-reverse;			
         }
       </style>
     </section>
@@ -52,7 +53,7 @@
       </div>
       <style>
         .flex-direction {
-
+			flex-direction: row-reverse;
         }
       </style>
     </section>
@@ -68,19 +69,19 @@
       </div>
       <style>
         .cat1 {
-
+			order: 1;
         }
 
         .cat2 {
-
+			order: 2;
         }
 
         .dog1 {
-
+			order: 3;
         }
 
         .dog2 {
-
+			order: 4;
         }
       </style>
     </section>
@@ -112,7 +113,7 @@
       </div>
       <style>
         .cats-dogs-wrap {
-
+			flex-wrap: wrap-reverse;
         }
       </style>
     </section>
@@ -125,7 +126,7 @@
       </div>
       <style>
         .cat-centered {
-
+			justify-content: center;
         }
       </style>
     </section>
@@ -138,7 +139,7 @@
       </div>
       <style>
         .cat-centered-v {
-
+			align-items: center;
         }
       </style>
     </section>
@@ -150,7 +151,8 @@
       </div>
       <style>
         .cat-centered-v-h {
-
+			justify-content: center;
+			align-items: center;
         }
       </style>
     </section>
@@ -159,12 +161,62 @@
       <h3>Сделайте верстку таблицы с 3 колонками и 10 строчками</h3>
       <p>Используйте inline-стили</p>
       <div class="table">
-
+			<div class="row">
+				<div class="x1"></div>
+				<div class="x2"></div>
+				<div class="x1"></div>
+				<div class="x2"></div>
+				<div class="x1"></div>
+				<div class="x2"></div>
+				<div class="x1"></div>
+				<div class="x2"></div>
+				<div class="x1"></div>
+				<div class="x2"></div>
+				</div>
+			<div class="row">
+				<div class="x1"></div>
+				<div class="x2"></div>
+				<div class="x1"></div>
+				<div class="x2"></div>
+				<div class="x1"></div>
+				<div class="x2"></div>
+				<div class="x1"></div>
+				<div class="x2"></div>
+				<div class="x1"></div>
+				<div class="x2"></div>
+				</div>
+			<div class="row">
+				<div class="x1"></div>
+				<div class="x2"></div>
+				<div class="x1"></div>
+				<div class="x2"></div>
+				<div class="x1"></div>
+				<div class="x2"></div>
+				<div class="x1"></div>
+				<div class="x2"></div>
+				<div class="x1"></div>
+				<div class="x2"></div>			
+				</div>
       </div>
       <style>
         .table {
-
+			flex-direction:column;
+			display: flex;
+			flex-wrap: wrap;
         }
+		.x1{
+			display:flex;
+			flex-grow:1;
+			background-color: red;
+		}
+		.x2{
+			display:flex;
+			flex-grow:12;
+			background-color: yellow;
+		}
+		.row{
+						display:flex;
+		}
       </style>
     </section>
   </body>
